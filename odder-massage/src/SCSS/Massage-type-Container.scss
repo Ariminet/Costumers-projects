@@ -1,0 +1,132 @@
+.massage-type-container {
+  background: #042b48;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  // height: 45vh;
+  .text-container {
+    margin: 5% 15% 5% 15%;
+  }
+  .text-title {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .text-text {
+    width: 90%;
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+  }
+  .img-container {
+    padding: 5% 20%;
+    height: 100%;
+    width: 100%;
+  }
+  .booking-btn {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+}
+
+$break-large: 1420px;
+$break-medium: 943px;
+$break-small: 780px;
+$break-xsmall: 440px;
+
+@media screen and (min-width: $break-large) {
+  #root {
+  }
+}
+@media screen and (max-width: $break-large - 1) {
+  #root {
+    .massage-type-container {
+      background: #042b48;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // height: 45vh;
+      .text-container {
+        margin: 5% 0 5% 5%;
+      }
+      .text-title {
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .text-text {
+        width: 100%;
+        font-size: 1.6rem;
+        margin-bottom: 5%;
+      }
+      .img-container {
+        // padding: auto 20%;
+        margin: auto 0;
+        height: 70%;
+        width: 100%;
+      }
+      .booking-btn {
+        color: white;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 1%;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: $break-medium) {
+  #root {
+    .massage-type-container {
+      background: #042b48;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      // height: 45vh;
+      .text-container {
+        margin: 5%;
+      }
+    }
+  }
+}
+@media screen and (max-width: $break-small) {
+  #root {
+    .massage-type-container {
+      background: #042b48;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      // height: 45vh;
+      .text-container {
+        margin: 5%;
+      }
+
+      .img-container {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-xsmall) {
+  #root {
+    .massage-type-container {
+      background: #042b48;
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr;
+      // height: 45vh;
+      .text-container {
+        margin: 5%;
+      }
+
+      .img-container {
+        display: none;
+      }
+    }
+  }
+}

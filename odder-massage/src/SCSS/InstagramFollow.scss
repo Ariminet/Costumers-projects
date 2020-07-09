@@ -1,0 +1,17 @@
+#instagram-follow {
+  grid-area: follow;
+  width: 25vw;
+  // height: 25vh;
+  margin: 5% 0 5% 27%;
+  #instagram-follow-link {
+    background: #09548d;
+    font-size: 1.8rem;
+    padding: 5% 8%;
+    border-radius: 5px;
+    color: white;
+  }
+  .fa-instagram {
+    color: white;
+    margin: 0 0.5% 0 0;
+  }
+}

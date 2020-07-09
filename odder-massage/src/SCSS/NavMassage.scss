@@ -1,0 +1,18 @@
+#massage-nav {
+  margin-top: 5%;
+  .massage-link {
+    background: #042b48;
+    border-left: white 1px solid;
+    font-size: 2rem;
+    padding: 1%;
+    text-decoration: none;
+    color: white;
+    &:first-of-type {
+      border-left: none;
+    }
+    &:hover {
+      transition: ease-in-out 0.06s;
+      background: lighten(#042b48, 5%);
+    }
+  }
+}

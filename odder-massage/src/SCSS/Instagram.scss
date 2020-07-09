@@ -1,0 +1,15 @@
+#instagram-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'p1 p2'
+    'follow follow';
+  &:first-child {
+    margin: 5% 0 0 20%;
+    grid-area: p1;
+  }
+  &:last-child {
+    grid-area: p2;
+    margin: 5% 0 0 20%;
+  }
+}

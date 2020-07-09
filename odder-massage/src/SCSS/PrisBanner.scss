@@ -1,0 +1,64 @@
+#pris-container {
+  width: 100%;
+  height: 20vh;
+  background: #042b48;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'title title title'
+    '30 45 60';
+  text-align: center;
+  padding: 1.5% 25% 0 25%;
+  #pris-title {
+    font-size: 2.5rem;
+    grid-area: title;
+  }
+  .pris-text {
+    font-size: 1.9rem;
+  }
+}
+$break-large: 1420px;
+$break-medium: 943px;
+$break-small: 780px;
+$break-xsmall: 440px;
+
+@media screen and (min-width: $break-large) {
+  #root {
+  }
+}
+@media screen and (max-width: $break-large - 1) {
+  #root {
+  }
+}
+@media screen and (max-width: $break-medium) {
+  #root {
+  }
+}
+@media screen and (max-width: $break-small) {
+  #root {
+    #pris-container {
+      padding: 5% 5% 0 5%;
+      #pris-title {
+        font-size: 2rem;
+      }
+      .pris-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-xsmall) {
+  #root {
+    #pris-container {
+      padding: 5% 5% 0 5%;
+      #pris-title {
+        font-size: 2rem;
+      }
+      .pris-text {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

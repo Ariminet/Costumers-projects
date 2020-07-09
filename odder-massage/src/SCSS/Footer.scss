@@ -1,0 +1,154 @@
+#footer {
+  background: #053357;
+  display: grid;
+  grid-template-columns: 1fr;
+  #footer-container {
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+  }
+  .footer-text-containers {
+    margin-left: 9%;
+  }
+
+  .footer-title {
+    color: white;
+    font-size: 2.5rem;
+  }
+  .footer-text {
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+  }
+  .footer-link {
+    background: rgba(24, 118, 242, 0.219);
+    padding: 1% 4%;
+    border-radius: 2px;
+  }
+  #kontakt-info {
+  }
+  #footer-address-title {
+    color: white;
+    font-size: 2rem;
+  }
+  #open-hours {
+    width: 100%;
+  }
+  #free-treatmment {
+  }
+  #satisfaction {
+  }
+  #img-cookie-container {
+    margin: 0 auto 2% auto;
+  }
+  #mobilepay-container {
+    margin-left: 5%;
+    height: 10vh;
+  }
+  #mobilepay {
+    height: 100%;
+  }
+  #cookie-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  #like-btn {
+    margin-top: 3%;
+    overflow: hidden;
+    width: 26.5%;
+  }
+
+  .phone-text {
+    &:hover {
+      color: #0483e4;
+      transition: ease-in-out 0.03s;
+    }
+  }
+  .mail-text {
+    &:hover {
+      color: #0483e4;
+      transition: ease-in-out 0.03s;
+    }
+  }
+}
+$break-large: 1520px;
+$break-medium: 943px;
+$break-small: 780px;
+$break-xsmall: 570px;
+
+@media screen and (max-width: $break-large) {
+  #root {
+    #footer {
+      #footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .footer-text-containers {
+        margin: 5% 0 5% 9%;
+      }
+    }
+  }
+}
+@media screen and (max-width: $break-medium) {
+  #root {
+    #footer {
+      #footer-container {
+        grid-template-columns: 1fr 1fr;
+        #open-hours {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: $break-small) {
+  #root {
+    #footer {
+      grid-template-columns: 1fr;
+      #footer-container {
+        grid-template-columns: 1fr;
+        #open-hours {
+          width: 40%;
+        }
+      }
+      .footer-text-containers {
+        margin: 5% auto;
+        width: 40%;
+      }
+      #like-btn {
+        margin-top: 3%;
+        overflow: hidden;
+        width: 38%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-xsmall) {
+  #root {
+    #footer {
+      grid-template-columns: 1fr;
+      #footer-container {
+        width: 0;
+        grid-template-columns: 1fr;
+      }
+      .footer-text-containers {
+        margin: 5% 5%;
+        width: 50%;
+      }
+      .footer-title {
+        font-size: 2.3rem;
+      }
+      #like-btn {
+        margin-top: 3%;
+        overflow: hidden;
+        width: 47%;
+      }
+    }
+  }
+}

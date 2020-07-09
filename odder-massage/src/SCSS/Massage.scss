@@ -1,0 +1,96 @@
+#massage-comp-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .massage-container {
+    margin: 0;
+    height: 50vh;
+    // width: 50vw;
+    position: relative;
+    .massage-img {
+      height: 100%;
+      width: 100%;
+    }
+    .massage-text-container {
+      text-align: center;
+      width: 100%;
+      // height: 100vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .massage-title {
+      // width: 20%;
+      text-decoration: none;
+      background: #042a48de;
+      padding: 0.5% 5%;
+      color: white;
+      font-size: 3rem;
+      border-radius: 15px;
+      // border: 1px solid white;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
+      &:hover {
+        // background: white;
+        // color: rgb(204, 202, 202);
+        transition: ease-in-out 0.07s;
+        background: lighten(#042b48, 5%);
+      }
+    }
+    .massage-text {
+      width: 45%;
+      margin: 2% auto;
+      font-size: 1.5rem;
+      color: darken(rgb(255, 255, 255), 10%);
+      font-style: italic;
+    }
+  }
+}
+$break-large: 1420px;
+$break-medium: 943px;
+$break-small: 780px;
+$break-xsmall: 440px;
+
+@media screen and (min-width: $break-large) {
+  #root {
+  }
+}
+@media screen and (max-width: $break-large - 1) {
+  #root {
+    #massage-comp-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .massage-text {
+        width: 70%;
+        margin: 2% auto;
+        font-size: 1.5rem;
+        color: darken(rgb(255, 255, 255), 10%);
+        font-style: italic;
+      }
+    }
+  }
+}
+@media screen and (max-width: $break-medium) {
+  #root {
+    #massage-comp-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      .massage-text {
+        width: 70%;
+        margin: 2% auto;
+        font-size: 1.5rem;
+        color: darken(rgb(255, 255, 255), 10%);
+        font-style: italic;
+      }
+    }
+  }
+}
+@media screen and (max-width: $break-small) {
+  #root {
+  }
+}
+
+@media screen and (max-width: $break-xsmall) {
+  #root {
+  }
+}
