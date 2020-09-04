@@ -12,6 +12,7 @@ import { Cookieconsent } from './components/CookieConsent/CookieConsent';
 import { Ydelser } from './components/Massage/Ydelser';
 import { NotFound } from './components/pages/NotFound';
 import ScrollToTop from './components/ScrollToTop';
+import { Vaction } from './components/Vacation/Vacation';
 function App() {
   return (
     <HashRouter>

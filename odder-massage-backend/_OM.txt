@@ -1,0 +1,52 @@
+
+**** START BACKEND: **************************
+
+Produktion (der rettes ikke i backend): npm run START
+Developer (foretrukken hvis der skal rettes i backend - trækker på nodemon): npm run devStart
+
+Projektet kører på PORT 5021 - dvs. http://localhost:5021
+Projektet benytter MongoDB - tjek .env-filen for at tilrette evt. path/sti til din MongoDB
+Installer gerne extension: "MongoDB for VS Code" - den giver dig adgang til at kigge i din MongoDB direkte fra VS Code.
+    https://marketplace.visualstudio.com/items?itemName=mongodb.mongodb-vscode 
+
+**** API - POSTMAN *******************************
+
+Du kan se dokumentationen og ex på metoderne her:
+https://documenter.getpostman.com/view/12464673/T1LVA4SU?version=latest#31fed515-4676-46c8-971e-7c9825152b96
+
+    - vælg HTTP eller JavaScript Fetch eller andet relevant i Language-dropdown i menubjælken øverst
+
+**** LOGIN til admin: **************************
+
+    brugernavn: admin
+    password: admin123
+
+Efter login kan der oprettes yderligere logins i adminbruger POST-metode
+Alle routes som indeholder ordet "admin" kræver login!
+
+**** IMAGES - Upload af filer/billeder **************************
+
+Upload af filer (images) til backend gemmes i public-folder i en af følgende mapper:
+        - bestyrelse
+        - events
+        - omos
+        - sponsorer
+
+Husk at uploadede images/billeder skal hentes fra backend med følgende sti afhængig af mappen (se herover):
+
+http://localhost:5021/images/bestyrelse/6Bigy46c8.png
+
+Bemærk at "public" IKKE skal indgå i stien til billederne ...
+
+**** DIVERSE **************************
+
+Ekstra installationer ud over express, mongoose mv.
+npm i:
+    bcrypt
+    mongoose
+    express-session
+    connect-mongo
+    multer
+    - se alle i package.json
+
+Fjern whitespace mv. i json - fx ved indsættelse af data i Postman: https://www.browserling.com/tools/remove-all-whitespace
