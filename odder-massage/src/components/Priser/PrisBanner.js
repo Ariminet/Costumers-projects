@@ -1,5 +1,5 @@
-import React from 'react';
-import '../../SCSS/PrisBanner.scss';
+import React from "react";
+import "../../SCSS/PrisBanner.scss";
 export const PrisBanner = () => {
   return (
     <div id="pris-container">
@@ -7,6 +7,7 @@ export const PrisBanner = () => {
       <h4 className="pris-text">30 x minutter 199,- kr</h4>
       <h4 className="pris-text">45 x minutter 299,- kr</h4>
       <h4 className="pris-text">60 x minutter 399,- kr</h4>
+      <h4 className="pris-text">Pris stigning per 01-10-2020</h4>
     </div>
   );
 };

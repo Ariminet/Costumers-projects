@@ -1,7 +1,7 @@
 #choose-container {
   // height: 100vh;
 
-  background-image: url('/massage-lokale.png');
+  background-image: url("/massage-lokale.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'custom allmassage' 'xtra xtra' 'service service' 'listpoints listpoints';
+    grid-template-areas: "custom allmassage" "xtra xtra" "service service" "listpoints listpoints";
     // grid-gap: 15% 5%;
   }
   .choose-points {
@@ -120,8 +120,8 @@ $break-xsmall: 440px;
       #choose-list {
         grid-template-columns: 1fr;
         grid-template-areas:
-          'custom' 'allmassage'
-          ' xtra' ' service';
+          "custom" "allmassage"
+          " xtra" " service";
       }
 
       #choose-title {
@@ -161,8 +161,8 @@ $break-xsmall: 440px;
       #choose-list {
         grid-template-columns: 1fr;
         grid-template-areas:
-          'custom' 'allmassage'
-          ' xtra' ' service';
+          "custom" "allmassage"
+          " xtra" " service";
         grid-gap: 0 5%;
         padding: 1% 5%;
       }

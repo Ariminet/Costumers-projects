@@ -1,15 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 export const WellnessContainer = () => {
-  var sm_App = '7f59d07a-5fd4-48c0-887a-b504f5d76c68';
-  var sm_WidgetUrl = 'https://web-booking.dk/modules/booking/';
-  (function () {
-    var sm = document.createElement('script');
-    sm.type = 'text/javascript';
+  var sm_App = "7f59d07a-5fd4-48c0-887a-b504f5d76c68";
+  var sm_WidgetUrl = "https://web-booking.dk/modules/booking/";
+  (function() {
+    var sm = document.createElement("script");
+    sm.type = "text/javascript";
     sm.async = true;
-    sm.src = sm_WidgetUrl + 'js/booking.js?v=637248340262727713';
-    var s = document.getElementsByTagName('script')[0];
+    sm.src = sm_WidgetUrl + "js/booking.js?v=637248340262727713";
+    var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(sm, s);
   })();
   return (
@@ -41,7 +41,7 @@ export const WellnessContainer = () => {
           BOOK EN TID
         </Link>
       </div>
-      <img src="wellness-massage.jpg" alt="" className="img-container" />
+      <img src="wellness-massage-info.jpg" alt="" className="img-container" />
     </figure>
   );
 };

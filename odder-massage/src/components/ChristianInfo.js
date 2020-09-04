@@ -1,5 +1,6 @@
-import React from 'react';
-import '../SCSS/ChristianInfo.scss';
+import React from "react";
+import "../SCSS/ChristianInfo.scss";
+import { PrisBanner } from "./Priser/PrisBanner";
 export const ChristianInfo = () => {
   return (
     <div id="christian-container">
@@ -42,6 +43,7 @@ export const ChristianInfo = () => {
           id="christian-img"
         />
       </figure>
+      <PrisBanner />
     </div>
   );
 };

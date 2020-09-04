@@ -1,7 +1,7 @@
-import React from 'react';
-import '../../SCSS/Footer.scss';
-import { HashLink as Link } from 'react-router-hash-link';
-import ReactFBLike from 'react-fb-like';
+import React from "react";
+import "../../SCSS/Footer.scss";
+import { HashLink as Link } from "react-router-hash-link";
+import ReactFBLike from "react-fb-like";
 export const Footer = () => {
   return (
     <div id="footer">
@@ -28,10 +28,13 @@ export const Footer = () => {
         <div id="open-hours" className="footer-text-containers">
           <h3 className="footer-title">Åbnings Tider</h3>
           <p className="footer-text">
-            Mandag <br /> 15:00-19:00{' '}
+            Mandag <br /> 12:00-17:00{" "}
           </p>
           <p className="footer-text">
-            Mandag - Fredag <br /> 08:00 - 12:00{' '}
+            Tirsdag & Torsdag <br /> 09:00 - 12:00 & 17:00 - 18:00{" "}
+          </p>
+          <p className="footer-text">
+            Fredag <br /> 12:00 - 15:00{" "}
           </p>
 
           <p className="footer-text">

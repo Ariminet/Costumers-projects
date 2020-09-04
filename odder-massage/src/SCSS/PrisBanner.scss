@@ -6,8 +6,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
-    'title title title'
-    '30 45 60';
+    "title title title"
+    "30 45 60"
+    ".. stig ..";
   text-align: center;
   padding: 1.5% 25% 0 25%;
   #pris-title {
@@ -16,6 +17,12 @@
   }
   .pris-text {
     font-size: 1.9rem;
+    padding-top: 15px;
+    &:last-of-type {
+      grid-area: stig;
+      font-weight: bold;
+      text-decoration: underline;
+    }
   }
 }
 $break-large: 1420px;

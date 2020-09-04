@@ -1,9 +1,18 @@
 #ydelses-container {
-  height: 60vh;
-  width: 100vw;
+  height: 85vh;
+  // width: 100%;
   margin: 0;
+  overflow: hidden;
+  background-image: url("/massage-lokale.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   #ydelser-img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
   }
+}
+#pris-container {
+  padding: 50px 0;
 }

@@ -3,6 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: white;
+  grid-template-areas:
+    "left img"
+    "left pris";
 
   .odder-title {
     font-size: 3rem;
@@ -17,6 +20,7 @@
   }
 
   #christian-info {
+    grid-area: img;
     margin: 0;
   }
   #christian-img {
@@ -24,10 +28,16 @@
     width: 100%;
   }
   #christian-text {
+    grid-area: left;
     height: 100%;
     padding: 8% 0 3% 10%;
     background: #042b48;
   }
+}
+#pris-container {
+  height: 100%;
+  padding-top: 50px;
+  grid-area: pris;
 }
 
 $break-large: 1420px;
